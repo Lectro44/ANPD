@@ -5,4 +5,4 @@ tensorflow==2.12.0
 streamlit
 Pillow
 easyocr
-libgl1
+sudo apt-get install libgl1-mesa-glx
