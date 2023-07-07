@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
-harcascade = "haarcascade_russian_plate_number.xml"
+harcascade = "ANPD/haarcascade_russian_plate_number.xml"
 
 min_area=500
 
