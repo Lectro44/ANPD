@@ -1,8 +1,9 @@
 import cv2
 import easyocr
 import pandas as pd
+import streamlit as st
 
-harcascade = "/content/haarcascade_russian_plate_number.xml"
+harcascade = "haarcascade_russian_plate_number.xml"
 
 
 
@@ -44,17 +45,7 @@ while True:
 reader = easyocr.Reader(['en'])
 result=reader.readtext(img_roi)
 text = result[0][-2]
-print(text)
-
-
-
-
-      #cv2.imwrite("plates/scaned_img_" + str(count) + ".jpg", img_roi)
-      #cv2.rectangle(img, (0,200), (640,300), (0,255,0), cv2.FILLED)
-      #cv2.putText(img, "Plate Saved", (150, 265), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2, (0, 0, 255), 2)
-      #cv2.imshow("Results",img)
-      #cv2.waitKey(500)
-      #count += 1
+st.write(text)
 
 
 
