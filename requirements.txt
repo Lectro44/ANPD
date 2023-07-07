@@ -5,4 +5,4 @@ tensorflow==2.12.0
 streamlit
 Pillow
 easyocr
-libgl1-mesa-glx
+libgl1
