@@ -23,11 +23,11 @@ else:
     image(opencv_image1)
 
 def image(cv_image):
-  photo= cv2.imread(cv_image)
+  cv2.imread(cv_image)
   return
 
 while True:
-  img=image(photo)
+  img=image(cv_imsge)
 
   plate_cascade = cv2.CascadeClassifier(harcascade)
   img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
